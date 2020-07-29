@@ -1,25 +1,13 @@
 const initialState = {
-  loading: false,
-  modal: {},
-  productAdvOpen: false,
-  packageAdvOpen: false,
-  shopBuyProductAdvOpen: false,
-  compareProducts: [],
-  comparePackages: [],
-  compareProductsRT: [],
-  comparePackagesRT: [],
-  applyPn: '',
-  phonePlanData: {},
-  previewData: {},
-  applyInfo: {}
+  ingTabName: 'intro'
 }
 
 const statusReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "SET_PREINGTABNAME":
+    case "SET_TABNAME":
       return {
         ...state,
-        preIngTabName: action.value
+        ingTabName: action.value
       }
 
     default:

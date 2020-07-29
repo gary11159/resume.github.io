@@ -10,11 +10,11 @@ class Footer extends React.Component {
                 <div className="footer">
                     <Container>
                         <Row style={{ 'padding': '50px 0 50px 0' }}>
-                            <Col md={8} style={{ 'text-align': 'left' }}>
+                            <Col md={8} style={{ textAlign: 'left' }}>
                                 <h3>Gary Yang</h3>
                                 <span>聯絡方式：<a href="mailto:gary11159@gmail.com">gary11159@gmail.com</a></span>
                             </Col>
-                            <Col md={4} style={{ 'text-align': 'right' }}>
+                            <Col md={4} style={{ textAlign: 'right' }}>
                             // 這裡做 social media
                             </Col>
                         </Row>

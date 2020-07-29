@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.content {
+  padding: 20px 0 20px 0;
+  min-height: 500px;
+}
+
+hr {
+  height: 2px !important;
+  border-width: 0 !important;
+  background-color: gray;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
