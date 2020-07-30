@@ -34,9 +34,72 @@
 }
 
 hr {
-  height: 2px !important;
+  height: 5px !important;
   border-width: 0 !important;
-  background-color: gray;
+  background-color: #b4a167;
+}
+
+section > div {
+  min-height: 700px;
+}
+
+.padding-50 {
+  padding: 50px 0 50px 0;
+}
+
+.font_0 {
+  font: normal normal normal 65px/1.4em lulo-clean-w01-one-bold, sans-serif;
+  color: #FFFFFF;
+}
+
+.font_1 {
+  font: normal normal normal 16px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+  color: #CCCCCC;
+}
+
+.font_2 {
+  font: normal normal normal 50px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+  color: #00D646;
+}
+
+.font_3 {
+  font: normal normal normal 42px/1.4em lulo-clean-w01-one-bold, sans-serif;
+  color: #FFFFFF;
+}
+
+.font_4 {
+  font: normal normal normal 40px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  color: #FFFFFF;
+}
+
+.font_5 {
+  font: normal normal normal 24px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  color: #FFFFFF;
+}
+
+.font_6 {
+  font: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+  color: #00D646;
+}
+
+.font_7 {
+  font: normal normal normal 16px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+  color: #00D646;
+}
+
+.font_8 {
+  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  color: #BEC7D5;
+}
+
+.font_9 {
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  color: #BEC7D5;
+}
+
+.font_10 {
+  font: normal normal normal 12px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+  color: #CCCCCC;
 }
 
 @keyframes App-logo-spin {

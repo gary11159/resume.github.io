@@ -7,7 +7,7 @@ import './css/hover-min.css';
 import Footer from './components/footer';
 import Header from './components/header';
 import Info from './components/info';
-import Intro from './components/intro';
+import Experience from './components/experience';
 import Skill from './components/skill';
 import { Container } from 'react-bootstrap';
 import { AnimateOnChange } from 'react-animation';
@@ -20,19 +20,16 @@ function App(props) {
   return (
     <>
       <Header />
-      <Container className="content">
-        <AnimateOnChange style={{ 'width': '100%' }}>
-          {ingTabName === 'intro' &&
-            <Intro />
-          }
-          {ingTabName === 'info' &&
-            <Info />
-          }
-          {ingTabName === 'skill' &&
-            <Skill />
-          }
-        </AnimateOnChange>
-      </Container>
+      <section>
+        <Info />
+      </section>
+      <section>
+        <Skill />
+      </section>
+      <section>
+        <Experience />
+      </section>
+
       <Footer />
     </>
   );

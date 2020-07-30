@@ -10,27 +10,48 @@ import InfoImg from '../public/info.png';
 import SkillImg from '../public/skill.png';
 import ExperienceImg from '../public/experience.png';
 import './header.css';
-class Header extends React.Component {
-    render() {
-        const { setTabName } = this.props;
-        return (
-            <>
-                <div className="header">
-                    <Container>
-                        <Navbar>
-                            <Navbar.Brand className="fs32 hvr-wobble-horizontal" onClick={() => setTabName('intro')}>Gary Yang</Navbar.Brand>
-                            <Navbar.Toggle />
-                            <Navbar.Collapse className="justify-content-end">
-                                <Nav.Link className="hvr-wobble-horizontal" onClick={() => setTabName('info')}><img src={InfoImg} /><span className="black"> Info</span></Nav.Link>
-                                <Nav.Link className="hvr-wobble-horizontal" onClick={() => setTabName('skill')}><img src={SkillImg} /><span className="black"> Skill</span></Nav.Link>
-                                <Nav.Link className="hvr-wobble-horizontal" onClick={() => setTabName('experience')}><img src={ExperienceImg} /><span className="black">Experience</span></Nav.Link>
-                            </Navbar.Collapse>
-                        </Navbar>
-                    </Container>
-                </div>
-            </>
-        );
+function Header(props) {
+    React.useEffect(() => {
+        // let anchor = document.querySelector('a[href="#skill"]')
+        // let target = document.getElementById('skill')
+        // anchor.addEventListener('click', function (e) {
+        //     console.log("aaaaa");
+        //     if (window.scrollTo) {
+        //         e.preventDefault()
+        //         window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop })
+        //     }
+        // })
+
+        // return () => {
+        //     window.removeEventListener('scroll');
+        // };
+    });
+
+    function scrollHandle(e, type) {
+        let target = document.getElementById(type);
+        if (window.scrollTo) {
+            e.preventDefault()
+            window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop })
+        }
     }
+
+    return (
+        <>
+            <div className="header">
+                <Container>
+                    <Navbar>
+                        <Navbar.Brand className="fs32 hvr-wobble-horizontal" onClick={() => setTabName('intro')}>Gary Yang</Navbar.Brand>
+                        <Navbar.Toggle />
+                        <Navbar.Collapse className="justify-content-end">
+                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} /><span className="black"> Info</span></Nav.Link>
+                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} /><span className="black"> Skill</span></Nav.Link>
+                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} /><span className="black">Experience</span></Nav.Link>
+                        </Navbar.Collapse>
+                    </Navbar>
+                </Container>
+            </div>
+        </>
+    );
 }
 
 const mapStateToProps = (state, ownProps) => {

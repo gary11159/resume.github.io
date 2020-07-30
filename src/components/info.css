@@ -4,7 +4,7 @@
 
 .center {
     text-align: center;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .padding5 {
@@ -19,6 +19,21 @@
     font-size: 24px;
 }
 
+.fs32 {
+    font-size: 32px;
+}
+
 .margin-top-5 {
     margin-top: 25px;
+}
+
+.parallax {
+    background-image: url('../public/infoBackground.png');
+    /* Set a specific height */
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

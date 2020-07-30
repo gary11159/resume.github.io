@@ -1,0 +1,15 @@
+.parallax_3 {
+    background-image: url('../public/tech.png');
+    /* Set a specific height */
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 300;
+}
+
+.line {
+    border-bottom: 1px solid #999;
+}
