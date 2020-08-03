@@ -40,12 +40,12 @@ function Header(props) {
             <div className="header">
                 <Container>
                     <Navbar>
-                        <Navbar.Brand className="fs32 hvr-wobble-horizontal" onClick={() => setTabName('intro')}>Gary Yang</Navbar.Brand>
+                        <Navbar.Brand className="fs32 hvr-wobble-horizontal">Gary Yang</Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} /><span className="black"> Info</span></Nav.Link>
-                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} /><span className="black"> Skill</span></Nav.Link>
-                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} /><span className="black">Experience</span></Nav.Link>
+                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon"/><span className="black"> Info</span></Nav.Link>
+                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} alt="skill"/><span className="black"> Skill</span></Nav.Link>
+                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} alt="experience"/><span className="black">Experience</span></Nav.Link>
                         </Navbar.Collapse>
                     </Navbar>
                 </Container>

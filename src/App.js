@@ -10,7 +10,9 @@ import Info from './components/info';
 import Experience from './components/experience';
 import Skill from './components/skill';
 import { Container } from 'react-bootstrap';
-import { AnimateOnChange } from 'react-animation';
+// import 'animate.css/animate.css';
+import './css/animate.css/animate.min.css';
+import './css/animate.css/animate.css';
 
 function App(props) {
   const { ingTabName } = props;
@@ -23,10 +25,10 @@ function App(props) {
       <section>
         <Info />
       </section>
-      <section>
+      <section style={{ zIndex: 100 }}>
         <Skill />
       </section>
-      <section>
+      <section style={{ zIndex: 200 }}>
         <Experience />
       </section>
 

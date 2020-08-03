@@ -9,3 +9,7 @@
     background-size: cover;
     z-index: 200;
 }
+
+.animate__animated.animate__backInUp {
+    --animate-duration: 1s;
+  }
