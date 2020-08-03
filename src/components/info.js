@@ -73,7 +73,7 @@ function Info(props) {
                                             'transform: scale(1.2)',
                                         ]}
                                     > */}
-                                        <span className="fs40">Position</span>
+                                        <span className="fs40 bold">Position</span>
                                     {/* </AnimateKeyframes> */}
                                 </Col>
                             </Row>
