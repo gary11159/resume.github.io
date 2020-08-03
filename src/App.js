@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Animate, AnimateKeyframes } from 'react-simple-animate';
 import './App.css';
@@ -15,15 +15,22 @@ import './css/animate.css/animate.min.css';
 import './css/animate.css/animate.css';
 
 function App(props) {
-  const { ingTabName } = props;
-  React.useEffect(() => {
-
-  })
+  const [loading, setLoading] = useState(true);
+  function setLoaded(loaded) {
+    setLoading(loaded);
+  }
   return (
     <>
+      {loading &&
+        <div id="loader-wrapper" style={{ opacity: '0.9' }}>
+          <div id="loader"><img src='https://i.imgur.com/qo4oWvj.gif' alt="" /></div>
+          <div className="loader-section section-left"></div>
+          <div className="loader-section section-right"></div>
+        </div>
+      }
       <Header />
       <section>
-        <Info />
+        <Info setLoaded={(loaded) => setLoaded(loaded)}/>
       </section>
       <section style={{ zIndex: 100 }}>
         <Skill />
@@ -39,8 +46,6 @@ function App(props) {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    ownProps,
-    ingTabName: state.statusReducer.ingTabName,
   }
 }
 export default connect(mapStateToProps)(App);

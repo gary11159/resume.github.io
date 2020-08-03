@@ -4,34 +4,19 @@ import { setTabName } from '../actions/app';
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import logo from '../logo.svg';
 import { Navbar, Nav } from 'react-bootstrap';
 import InfoImg from '../public/info.png';
 import SkillImg from '../public/skill.png';
 import ExperienceImg from '../public/experience.png';
 import './header.css';
 function Header(props) {
-    React.useEffect(() => {
-        // let anchor = document.querySelector('a[href="#skill"]')
-        // let target = document.getElementById('skill')
-        // anchor.addEventListener('click', function (e) {
-        //     console.log("aaaaa");
-        //     if (window.scrollTo) {
-        //         e.preventDefault()
-        //         window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop })
-        //     }
-        // })
-
-        // return () => {
-        //     window.removeEventListener('scroll');
-        // };
-    });
-
     function scrollHandle(e, type) {
         let target = document.getElementById(type);
         if (window.scrollTo) {
             e.preventDefault()
-            window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop })
+            if (target !== undefined && target !== null) {
+                window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop });
+            }
         }
     }
 
@@ -43,9 +28,9 @@ function Header(props) {
                         <Navbar.Brand className="fs32 hvr-wobble-horizontal">Gary Yang</Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon"/><span className="black"> Info</span></Nav.Link>
-                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} alt="skill"/><span className="black"> Skill</span></Nav.Link>
-                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} alt="experience"/><span className="black">Experience</span></Nav.Link>
+                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon" /><span className="black"> Info</span></Nav.Link>
+                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} alt="skill" /><span className="black"> Skill</span></Nav.Link>
+                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} alt="experience" /><span className="black">Experience</span></Nav.Link>
                         </Navbar.Collapse>
                     </Navbar>
                 </Container>

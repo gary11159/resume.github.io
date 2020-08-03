@@ -39,7 +39,7 @@ hr {
   background-color: #b4a167;
 }
 
-section > div {
+section>div {
   min-height: 700px;
 }
 
@@ -48,8 +48,9 @@ section > div {
 }
 
 .margin_bottom_25 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
+
 .font_0 {
   font: normal normal normal 65px/1.4em lulo-clean-w01-one-bold, sans-serif;
   color: #FFFFFF;
@@ -82,7 +83,7 @@ section > div {
 
 .font_6 {
   font: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
-  color: #00D646;
+  color: #FFFFFF;
 }
 
 .font_7 {
@@ -103,6 +104,159 @@ section > div {
 .font_10 {
   font: normal normal normal 12px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
   color: #CCCCCC;
+}
+
+
+
+.line {
+  border-bottom: 3px solid #d9c791;
+  position: relative;
+  transform: rotate(90deg) scale(0.75);
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.description {
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  color: white;
+}
+
+.exContainerR {
+  margin-right: 10px !important;
+  max-width: 70% !important;
+}
+
+.exContainerL {
+  margin-left: 10px !important;
+  max-width: 70% !important;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  z-index: 999;
+}
+
+
+
+.wd24 {
+  width: 24px;
+}
+
+.center {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.padding5 {
+  padding: 0 5px 0 5px;
+}
+
+.social_link {
+  margin: 20px 0 20px 0;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs32 {
+  font-size: 32px;
+}
+
+.fs40 {
+  font-size: 40px;
+}
+
+
+.margin-top-5 {
+  margin-top: 25px;
+}
+
+.parallax {
+  background-image: url('https://i.imgur.com/WVUZJXV.png');
+  /* Set a specific height */
+  min-height: 900px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax_2 {
+  background-image: url('https://i.imgur.com/ECH0MWW.png');
+  /* Set a specific height */
+  min-height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 200;
+}
+
+.parallax_3 {
+  background-image: url('https://i.imgur.com/PnCDHmN.jpg');
+  /* Set a specific height */
+  min-height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 200;
+}
+.animate__animated.animate__backInUp {
+  --animate-duration: 1s;
+}
+
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: calc(50% - 130px);
+	top: calc(50% - 130px);
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	z-index: 1001;
+}
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 1);
+	z-index: 1000;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
 }
 
 @keyframes App-logo-spin {

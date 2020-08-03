@@ -2,10 +2,21 @@ import Container from 'react-bootstrap/Container';
 import React, { Fragment } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './skill.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function Skill() {
+    React.useEffect(() => {
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.pageYOffset;
+            let bgParallax = document.getElementsByClassName('parallax_2')[0];
+            let limit = bgParallax.offsetTop + bgParallax.offsetHeight;
+            if (scrollPosition <= limit) {
+                bgParallax.style.backgroundPositionY = (50 - 20 * scrollPosition / limit) + '%';
+            } else {
+                bgParallax.style.backgroundPositionY = '50%';
+            }
+        });
+    });
     return (
         <>
             <div id="skill" className="parallax_2">
