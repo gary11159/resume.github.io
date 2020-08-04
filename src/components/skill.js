@@ -20,8 +20,10 @@ function Skill() {
     return (
         <>
             <div id="skill" className="parallax_2">
+                <br /><br />
+                <h1 className="center font_0 black" style={{ fontWeight: '700' }}>技能 Skills</h1>
                 <ScrollAnimation animateIn='flipInX' animateOnce={true}>
-                    <Container className="padding-50">
+                    <Container className="padding-bottom-50">
                         {/* 技能 */}
                         <Row>
                             <Col md={4}>

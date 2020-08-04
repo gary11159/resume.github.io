@@ -42,7 +42,6 @@ function Info(props) {
                                 </Col>
                             </Row>
                         </Animate>
-                        <br/>
                         {/* icon */}
                         <Animate start={{ opacity: 0 }} end={{ opacity: 1 }} sequenceIndex={1}>
                             <Row>
@@ -50,39 +49,40 @@ function Info(props) {
                                     <a className="padding5" href="https://www.cakeresume.com/me/gary-yang" target="_blank" rel="nofollow noopener noreferrer">
                                         <img src='https://i.imgur.com/kNpugNN.png' className="wd24" />
                                     </a>
-                                    
+
                                     <a className="padding5" href="mailto:gary11159@gmail.com" target="_blank" rel="nofollow noopener noreferrer">
                                         <img src='https://i.imgur.com/ZO0xFRL.png' className="wd24" />
                                     </a>
                                     <p className="font_8">可點擊圖示聯絡我唷</p>
+                                    <p className="font_6">
+                                        Taipei, New Taipei, Taiwan
+                                        <br></br>
+                                        0919-683-326
+                                    </p>
                                 </Col>
                             </Row>
                         </Animate>
-                        <br/>
                         {/* 簡單介紹 */}
                         <Animate start={{ opacity: 0 }} end={{ opacity: 1 }} sequenceIndex={2}>
                             <Row>
                                 <Col className="center">
-                                    {/* <AnimateKeyframes
-                                        play
-                                        duration={1.5}
-                                        iterationCount="infinite"
-                                        keyframes={[
-                                            'transform: scale(1.2)',
-                                            'transform: scale(1)',
-                                            'transform: scale(1.2)',
-                                        ]}
-                                    > */}
-                                        <span className="fs40 bold">Position</span>
-                                    {/* </AnimateKeyframes> */}
+                                    <span className="fs40 bold font_0">軟體工程師</span>
                                 </Col>
                             </Row>
                         </Animate>
-                        <br/>   
+                        <br />
                         <Animate start={{ opacity: 0 }} end={{ opacity: 1 }} sequenceIndex={3}>
                             <Row>
                                 <Col className="center margin-top-5 font_5">
-                                    3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg3423423pjepfogdjpofgjsdpogjspodg
+                                    畢業於中原大學資訊工程學系(2014~2018)
+                                    <br/>
+                                    擔任專職的網頁開發者超過一年，目前在台灣之星(駐點人員)負責網路前端開發與維護。
+                                    <br/>
+                                    曾經開發過遠傳內部人員風險管控系統、資策會台塑專案熱感應設備監控頁面。
+                                    <br/>
+                                    不畏懼挑戰，盡可能的用不同方法迎接各種挑戰。
+                                    <br/>
+                                    對前端有更加高的熱忱，也熱愛與UI/UX團隊、後端團隊合作的開發模式。
                                 </Col>
                             </Row>
                         </Animate>
