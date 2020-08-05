@@ -19,95 +19,97 @@ function Skill() {
     });
     return (
         <>
-            <div id="skill" className="parallax_2">
-                <br /><br />
-                <h1 className="center font_0 black" style={{ fontWeight: '700' }}>技能 Skills</h1>
-                <ScrollAnimation animateIn='flipInX' animateOnce={true}>
-                    <Container className="padding-bottom-50">
-                        {/* 技能 */}
-                        <Row>
-                            <Col md={4}>
-                                <hr />
-                                <h2 className="font_3 black bold">語言</h2>
-                                <ul className="font_5 black">
-                                    <li>
-                                        C++
+            <section>
+                <div id="skill" className="parallax_2">
+                    <br /><br />
+                    <h1 className="center font_0 black" style={{ fontWeight: '700' }}>技能 Skills</h1>
+                    <ScrollAnimation animateIn='bounceInUp' animateOnce={true} duration={1.5}>
+                        <Container className="padding-bottom-50">
+                            {/* 技能 */}
+                            <Row>
+                                <Col md={4}>
+                                    <hr />
+                                    <h2 className="font_3 black bold">語言</h2>
+                                    <ul className="font_5 black">
+                                        <li>
+                                            C++
                                     </li>
-                                    <li>
-                                        C#
+                                        <li>
+                                            C#
                                     </li>
-                                    <li>
-                                        JAVA
+                                        <li>
+                                            JAVA
                                     </li>
-                                    <li>
-                                        HTML
+                                        <li>
+                                            HTML
                                     </li>
-                                    <li>
-                                        JavaScript / ES6
+                                        <li>
+                                            JavaScript / ES6
                                     </li>
-                                    <li>
-                                        CSS
+                                        <li>
+                                            CSS
                                     </li>
-                                    <li>
-                                        JQuery
+                                        <li>
+                                            JQuery
                                     </li>
-                                </ul>
-                            </Col>
-                            <Col md={4}>
-                                <hr />
-                                <h2 className="font_3 black bold">框架</h2>
-                                <ul className="font_5 black">
-                                    <li>
-                                        ReactJs/Redux/React Router
+                                    </ul>
+                                </Col>
+                                <Col md={4}>
+                                    <hr />
+                                    <h2 className="font_3 black bold">框架</h2>
+                                    <ul className="font_5 black">
+                                        <li>
+                                            ReactJs/Redux/React Router
                                     </li>
-                                    <li>
-                                        VueJS/Vue Router
+                                        <li>
+                                            VueJS/Vue Router
                                     </li>
-                                    <li>
-                                        Spring MVC
+                                        <li>
+                                            Spring MVC
                                     </li>
-                                    <li>
-                                        Boostrap
+                                        <li>
+                                            Boostrap
                                     </li>
-                                    <li>
-                                        Express.js
+                                        <li>
+                                            Express.js
                                     </li>
-                                    
-                                </ul>
-                            </Col>
-                            <Col md={4}>
-                                <hr />
-                                <h2 className="font_3 black bold">其他</h2>
-                                <ul className="font_5 black">
-                                    <li>
-                                        版本管控
+
+                                    </ul>
+                                </Col>
+                                <Col md={4}>
+                                    <hr />
+                                    <h2 className="font_3 black bold">其他</h2>
+                                    <ul className="font_5 black">
+                                        <li>
+                                            版本管控
                                         <ul>
-                                            <li>Git</li>
-                                            <li>SourceTree</li>
-                                            <li>Svn</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        壓力測試
+                                                <li>Git</li>
+                                                <li>SourceTree</li>
+                                                <li>Svn</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            壓力測試
                                         <ul>
-                                            <li>LoadRunner</li>
-                                            <li>Jmeter</li>
-                                            <li>Postman</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        資料庫
+                                                <li>LoadRunner</li>
+                                                <li>Jmeter</li>
+                                                <li>Postman</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            資料庫
                                         <ul>
-                                            <li>Oracle</li>
-                                            <li>MySQL</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </Col>
-                        </Row>
-                    </Container>
-                </ScrollAnimation>
-            </div>
+                                                <li>Oracle</li>
+                                                <li>MySQL</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </ScrollAnimation>
+                </div>
+            </section>
         </>
     );
 }

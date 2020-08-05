@@ -1,4 +1,5 @@
 import React from 'react';
+import loading from '../public/loading.gif'
 class Spinner extends React.Component {
     render() {
         return (

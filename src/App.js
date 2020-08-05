@@ -23,19 +23,11 @@ function App(props) {
   }
   return (
     <>
-      {loading &&
-        <Spinner />
-      }
+      {loading && <Spinner />}
       <Header />
-      <section>
-        <Info setLoaded={(loaded) => setLoaded(loaded)} />
-      </section>
-      <section style={{ zIndex: 100 }}>
-        <Skill />
-      </section>
-      <section style={{ zIndex: 200 }}>
-        <Experience />
-      </section>
+      <Info />
+      <Skill />
+      <Experience setLoaded={(loaded) => setLoaded(loaded)} />
       <ScrollToTop />
       <Footer />
     </>

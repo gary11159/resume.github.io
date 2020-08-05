@@ -202,7 +202,7 @@ section>div {
 }
 
 .parallax {
-  background-image: url('https://i.imgur.com/WVUZJXV.png');
+  background-image: url('./public/infoBackground.png');
   /* Set a specific height */
   min-height: 900px;
   /* Create the parallax scrolling effect */
@@ -213,7 +213,7 @@ section>div {
 }
 
 .parallax_2 {
-  background-image: url('https://i.imgur.com/qyyYFZr.png');
+  background-image: url('./public/back.png');
   /* Set a specific height */
   min-height: 700px;
   /* Create the parallax scrolling effect */
@@ -225,7 +225,7 @@ section>div {
 }
 
 .parallax_3 {
-  background-image: url('https://i.imgur.com/PnCDHmN.jpg');
+  background-image: url('./public/experienceBackground.jpg');
   /* Set a specific height */
   min-height: 700px;
   /* Create the parallax scrolling effect */
