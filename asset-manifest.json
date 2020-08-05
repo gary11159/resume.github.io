@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.f608bbc3.chunk.css",
-    "main.js": "/static/js/main.1c29aa03.chunk.js",
-    "main.js.map": "/static/js/main.1c29aa03.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e6d97b33.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e6d97b33.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.ad0b5eba.chunk.js": "/static/js/2.ad0b5eba.chunk.js",
-    "static/js/2.ad0b5eba.chunk.js.map": "/static/js/2.ad0b5eba.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.06911da33df1b1563be5f4e82a6412e5.js": "/precache-manifest.06911da33df1b1563be5f4e82a6412e5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.f608bbc3.chunk.css.map": "/static/css/main.f608bbc3.chunk.css.map",
-    "static/js/2.ad0b5eba.chunk.js.LICENSE.txt": "/static/js/2.ad0b5eba.chunk.js.LICENSE.txt",
-    "static/media/logo.png": "/static/media/logo.94428a0a.png"
+    "main.css": "/resume.github.io/static/css/main.a14e0653.chunk.css",
+    "main.js": "/resume.github.io/static/js/main.685d04ac.chunk.js",
+    "main.js.map": "/resume.github.io/static/js/main.685d04ac.chunk.js.map",
+    "runtime-main.js": "/resume.github.io/static/js/runtime-main.dbd07778.js",
+    "runtime-main.js.map": "/resume.github.io/static/js/runtime-main.dbd07778.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/resume.github.io/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c252f7c8.chunk.js": "/resume.github.io/static/js/2.c252f7c8.chunk.js",
+    "static/js/2.c252f7c8.chunk.js.map": "/resume.github.io/static/js/2.c252f7c8.chunk.js.map",
+    "index.html": "/resume.github.io/index.html",
+    "precache-manifest.7efef322e672349d2f857092bb1d1f9c.js": "/resume.github.io/precache-manifest.7efef322e672349d2f857092bb1d1f9c.js",
+    "service-worker.js": "/resume.github.io/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/resume.github.io/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.a14e0653.chunk.css.map": "/resume.github.io/static/css/main.a14e0653.chunk.css.map",
+    "static/js/2.c252f7c8.chunk.js.LICENSE.txt": "/resume.github.io/static/js/2.c252f7c8.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/resume.github.io/static/media/logo.94428a0a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6d97b33.js",
+    "static/js/runtime-main.dbd07778.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.ad0b5eba.chunk.js",
-    "static/css/main.f608bbc3.chunk.css",
-    "static/js/main.1c29aa03.chunk.js"
+    "static/js/2.c252f7c8.chunk.js",
+    "static/css/main.a14e0653.chunk.css",
+    "static/js/main.685d04ac.chunk.js"
   ]
 }
