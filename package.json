@@ -1,5 +1,6 @@
 {
-  "name": "stock.github.io",
+  "homepage": "http://gary11159.github.io/resume.github.io",
+  "name": "Resume.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,14 +23,16 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-simple-animate": "^3.3.9",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "save-dev": "0.0.1-security"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
