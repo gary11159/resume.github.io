@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9714a4a9eef518acc6d69975a0838a0",
+    "revision": "30de2870e6c677fd5b81ad109077c4ba",
     "url": "/resume.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/resume.github.io/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "c8ccae0f82564dfb804b",
+    "revision": "a228a89e02457f1e5e5b",
     "url": "/resume.github.io/static/css/main.2b3109ee.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/resume.github.io/static/js/2.4da93db5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c8ccae0f82564dfb804b",
-    "url": "/resume.github.io/static/js/main.c4dd94be.chunk.js"
+    "revision": "a228a89e02457f1e5e5b",
+    "url": "/resume.github.io/static/js/main.124534e1.chunk.js"
   },
   {
     "revision": "41320e076760b1c4d0dd",
