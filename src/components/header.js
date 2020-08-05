@@ -25,7 +25,7 @@ function Header(props) {
             <div className="header">
                 <Container>
                     <Navbar>
-                        <Navbar.Brand className="hvr-wobble-horizontal"><span className="fs32">Gary Yang</span><br />gary11159@gmail.com</Navbar.Brand>
+                        <Navbar.Brand><span className="fs32">Gary Yang</span><br />gary11159@gmail.com</Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
                             <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon" /><span className="black bold"> 資訊</span></Nav.Link>
