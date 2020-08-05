@@ -21,7 +21,7 @@ function Experience() {
         <>
             <div id="experience" className="parallax_3">
                 <br /><br />
-                <h1 className="center font_0" style={{ fontWeight: '700' }}>Experience</h1>
+                <h1 className="center font_0" style={{ fontWeight: '700' }}>各駐點經驗</h1>
                 <br />
                 <Container id="con" className="padding-50">
                     {/* 名子 */}
@@ -30,7 +30,7 @@ function Experience() {
                             <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" animateOnce={true}>
                                 <Container className="exContainerR containerHeight">
                                     <p className="font_7">
-                                        2019/03-2019/08
+                                        2019/03 - 2019/08
                                         <svg id="1" xmlns="http://www.w3.org/2000/svg" version="1.1" className="point" style={{ left: '45px' }}>
                                             <circle cx="5" cy="5" r="5" style={{ fill: '#d9c791' }} />
                                         </svg>
@@ -40,8 +40,8 @@ function Experience() {
                                     <br></br>
                                     <span className="sp-Right">
                                         壓力測試 - 負責整個專案的壓力測試<br />
-                                        刻劃前端頁面 - 負責整個專案35%的頁面<br />
-                                        前後端分離 - Vue.js + RESTful API 設計<br />
+                                        刻劃前端頁面 - 負責整個專案35%的頁面(Vue.js)<br />
+                                        後端資料組合 - Spring MVC RESTful API 設計<br />
                                         需求確認 - 與PM、SA、SD以及客戶有良好的溝通<br />
                                     </span>
                                 </Container>
@@ -58,7 +58,7 @@ function Experience() {
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="point" style={{ right: '45px' }}>
                                             <circle cx="5" cy="5" r="5" style={{ fill: '#d9c791' }} />
                                         </svg>
-                                        2019/09-2020/01
+                                        2019/09 - 2020/01
                                     </p>
                                     <h5 className="font_5 margin_bottom_25">資策會展場設備資料呈現</h5>
                                     <span className="description">軟體工程師</span>
@@ -66,8 +66,8 @@ function Experience() {
                                     <span className="sp-Left">
                                         影像呈現 - 獨立完成前端、後端、資料庫所有需求<br />
                                         圖形化報表 - Highchart.js以及heatMap.js設計熱感應圖表<br />
-                                        RS232資料傳遞 - Node.js + Socket.IO<br />
-                                        需求確認 - 與PM、SA、SD以及客戶有良好的溝通<br />
+                                        RS232資料傳遞 - Express.js + Node.js + Socket.IO<br />
+                                        出差展覽 - 實際到台塑展覽自身設備<br />
                                     </span>
                                 </Container>
                             </ScrollAnimation>
@@ -78,37 +78,19 @@ function Experience() {
                             <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" animateOnce={true}>
                                 <Container className="exContainerR containerHeight">
                                     <p className="font_7">
-                                        2017-2018
+                                        2020/01 - 現在
                                         <svg id="2" xmlns="http://www.w3.org/2000/svg" version="1.1" className="point" style={{ left: '45px' }}>
                                             <circle cx="5" cy="5" r="5" style={{ fill: '#d9c791' }} />
                                         </svg>
                                     </p>
-                                    <h5 className="font_5 margin_bottom_25">Project Name</h5>
-                                    <span className="description">Associate Design Director</span>
+                                    <h5 className="font_5 margin_bottom_25">台灣之星銷售一條龍</h5>
+                                    <span className="description">前端工程師</span>
                                     <br></br>
-                                    <span style={{ color: 'gray' }}>I'm a paragraph. Click here to add your own text and edit me.
-                                            It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. </span>
-                                </Container>
-                            </ScrollAnimation>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={6}>
-                        </Col>
-                        <Col id="exp4" md={6} className="left">
-                            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" animateOnce={true}>
-                                <Container className="exContainerL containerHeight">
-                                    <p className="font_7">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="point" style={{ right: '45px' }}>
-                                            <circle cx="5" cy="5" r="5" style={{ fill: '#d9c791' }} />
-                                        </svg>
-                                        2017-2018
-                                    </p>
-                                    <h5 className="font_5 margin_bottom_25">Project Name</h5>
-                                    <span className="description">Associate Design Director</span>
-                                    <br></br>
-                                    <span style={{ color: 'gray' }}>I'm a paragraph. Click here to add your own text and edit me.
-                                            It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. </span>
+                                    <span className="sp-Right">
+                                        頁面開發 - 獨立完成前端(ReactJs)所有需求<br />
+                                        合作模式 - 和後端工程師溝通所需API<br />
+                                        主要內容 - 開發門市購商品頁面<br />
+                                    </span>
                                 </Container>
                             </ScrollAnimation>
                         </Col>

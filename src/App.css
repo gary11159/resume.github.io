@@ -112,13 +112,13 @@ section>div {
 
 @media (min-width: 768px) {
   .line {
-    transform: rotate(90deg) scale(1.79);
+    transform: rotate(90deg) scale(1);
   }
 }
 
 @media (min-width: 1024px) {
   .line {
-    transform: rotate(90deg) scale(0.75);
+    transform: rotate(90deg) scale(0.55);
   }
 }
 
@@ -281,14 +281,14 @@ section>div {
 }
 
 .sp-Right {
-  color: gray;
-  width: 360px;
+  color: #ccc8c8;
+  width: 700px;
   float: right;
 }
 
 .sp-Left {
-  color: gray;
-  width: 400px;
+  color: #ccc8c8;
+  width: 700px;
   float: left;
 }
 
@@ -299,4 +299,24 @@ section>div {
   to {
     transform: rotate(360deg);
   }
+}
+
+.gototop{
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+  transition: 300ms;
+  z-index: 9999;
+}
+
+/*go to top*/
+.gototop {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	text-decoration: none;
+	cursor: pointer;
 }

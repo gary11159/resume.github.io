@@ -28,9 +28,9 @@ function Header(props) {
                         <Navbar.Brand className="hvr-wobble-horizontal"><span className="fs32">Gary Yang</span><br />gary11159@gmail.com</Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon" /><span className="black"> Info</span></Nav.Link>
-                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} alt="skill" /><span className="black"> Skill</span></Nav.Link>
-                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} alt="experience" /><span className="black">Experience</span></Nav.Link>
+                            <Nav.Link href="#info" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'info')}><img src={InfoImg} alt="infoIcon" /><span className="black bold"> 資訊</span></Nav.Link>
+                            <Nav.Link href="#skill" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'skill')}><img src={SkillImg} alt="skill" /><span className="black bold"> 技能</span></Nav.Link>
+                            <Nav.Link href="#experience" className="hvr-wobble-horizontal" onClick={(e) => scrollHandle(e, 'experience')}><img src={ExperienceImg} alt="experience" /><span className="black bold"> 經驗</span></Nav.Link>
                         </Navbar.Collapse>
                     </Navbar>
                 </Container>

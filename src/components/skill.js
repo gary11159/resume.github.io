@@ -28,38 +28,80 @@ function Skill() {
                         <Row>
                             <Col md={4}>
                                 <hr />
-                                <h2 className="font_0 black">Topic1</h2>
-                                <ul className="font_3 black">
+                                <h2 className="font_3 black bold">語言</h2>
+                                <ul className="font_5 black">
                                     <li>
-                                        skill1
-                                </li>
+                                        C++
+                                    </li>
                                     <li>
-                                        skill2
-                                </li>
+                                        C#
+                                    </li>
+                                    <li>
+                                        JAVA
+                                    </li>
+                                    <li>
+                                        HTML
+                                    </li>
+                                    <li>
+                                        JavaScript / ES6
+                                    </li>
+                                    <li>
+                                        CSS
+                                    </li>
+                                    <li>
+                                        JQuery
+                                    </li>
                                 </ul>
                             </Col>
                             <Col md={4}>
                                 <hr />
-                                <h2 className="font_0 black">Topic2</h2>
-                                <ul className="font_3 black">
+                                <h2 className="font_3 black bold">框架</h2>
+                                <ul className="font_5 black">
                                     <li>
-                                        skill1
-                                </li>
+                                        ReactJs/Redux/React Router
+                                    </li>
                                     <li>
-                                        skill2
-                                </li>
+                                        VueJS/Vue Router
+                                    </li>
+                                    <li>
+                                        Spring MVC
+                                    </li>
+                                    <li>
+                                        Boostrap
+                                    </li>
+                                    <li>
+                                        Express.js
+                                    </li>
+                                    
                                 </ul>
                             </Col>
                             <Col md={4}>
                                 <hr />
-                                <h2 className="font_0 black">Topic3</h2>
-                                <ul className="font_3 black">
+                                <h2 className="font_3 black bold">其他</h2>
+                                <ul className="font_5 black">
                                     <li>
-                                        skill1
-                                </li>
+                                        版本管控
+                                        <ul>
+                                            <li>Git</li>
+                                            <li>SourceTree</li>
+                                            <li>Svn</li>
+                                        </ul>
+                                    </li>
                                     <li>
-                                        skill2
-                                </li>
+                                        壓力測試
+                                        <ul>
+                                            <li>LoadRunner</li>
+                                            <li>Jmeter</li>
+                                            <li>Postman</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        資料庫
+                                        <ul>
+                                            <li>Oracle</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </Col>
                         </Row>

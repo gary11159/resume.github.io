@@ -38,7 +38,7 @@ function Info(props) {
                         <Animate start={{ opacity: 0 }} end={{ opacity: 1 }} sequenceIndex={0}>
                             <Row>
                                 <Col>
-                                    <h1 className="center font_0" style={{ fontWeight: '700' }}>Name</h1>
+                                    <h1 className="center font_0" style={{ fontWeight: '700' }}>楊忠原<br/>GaryYang</h1>
                                 </Col>
                             </Row>
                         </Animate>
@@ -55,8 +55,10 @@ function Info(props) {
                                     </a>
                                     <p className="font_8">可點擊圖示聯絡我唷</p>
                                     <p className="font_6">
+                                        24歲
+                                        <br/>
                                         Taipei, New Taipei, Taiwan
-                                        <br></br>
+                                        <br/>
                                         0919-683-326
                                     </p>
                                 </Col>
@@ -76,7 +78,9 @@ function Info(props) {
                                 <Col className="center margin-top-5 font_5">
                                     畢業於中原大學資訊工程學系(2014~2018)
                                     <br/>
-                                    擔任專職的網頁開發者超過一年，目前在台灣之星(駐點人員)負責網路前端開發與維護。
+                                    目前在鴻揚科技公司擔任專職的網頁開發者超過一年(2019/02 ~ 現在)
+                                    <br/>
+                                    現在位於台灣之星(駐點人員)負責網頁前端開發與維護。
                                     <br/>
                                     曾經開發過遠傳內部人員風險管控系統、資策會台塑專案熱感應設備監控頁面。
                                     <br/>

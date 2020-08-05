@@ -13,6 +13,8 @@ import { Container } from 'react-bootstrap';
 // import 'animate.css/animate.css';
 import './css/animate.css/animate.min.css';
 import './css/animate.css/animate.css';
+import ScrollToTop from './components/scrollToTop';
+import Spinner from './components/spinner';
 
 function App(props) {
   const [loading, setLoading] = useState(true);
@@ -22,15 +24,11 @@ function App(props) {
   return (
     <>
       {loading &&
-        <div id="loader-wrapper" style={{ opacity: '0.9' }}>
-          <div id="loader"><img src='https://i.imgur.com/qo4oWvj.gif' alt="" /></div>
-          <div className="loader-section section-left"></div>
-          <div className="loader-section section-right"></div>
-        </div>
+        <Spinner />
       }
       <Header />
       <section>
-        <Info setLoaded={(loaded) => setLoaded(loaded)}/>
+        <Info setLoaded={(loaded) => setLoaded(loaded)} />
       </section>
       <section style={{ zIndex: 100 }}>
         <Skill />
@@ -38,7 +36,7 @@ function App(props) {
       <section style={{ zIndex: 200 }}>
         <Experience />
       </section>
-
+      <ScrollToTop />
       <Footer />
     </>
   );
