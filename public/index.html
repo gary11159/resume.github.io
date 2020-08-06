@@ -8,7 +8,6 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,21 +39,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
-<div id="count" align='center' style="display: none;">
-  <a href='https://www.hit-counts.com/'>
-    <img src='http://www.hit-counts.com/counter.php?t=MTQ1MDYzNg==' border='0' alt='professional logo'>
-  </a><BR>
-  <a href='https://www.glowgraphics.co.uk/'></a>
-</div>
-<script>
-  var click = 0;
-  $("#logo").click(function () {
-    if (click > 5) {
-      $('#count').css("display", "block");
-    } else {
-      click += 1;
-    }
-  });
-</script>
 
 </html>
