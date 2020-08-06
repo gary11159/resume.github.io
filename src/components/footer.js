@@ -12,7 +12,7 @@ class Footer extends React.Component {
                     <Container>
                         <Row style={{ 'padding': '25px 0 25px 0' }}>
                             <Col md={4} style={{ textAlign: 'center' }}>
-                                <img style={{ height: '80px' }} src={logo} />
+                                <img id="logo" style={{ height: '80px' }} src={logo} />
                             </Col>
                             <Col md={8} style={{ textAlign: 'left', margin: 'auto' }}>
                                 <p className="font_9 black" style={{ marginBottom: '0' }}>© 2020 by Gary Yang. Created by ReactJs Framework</p>
