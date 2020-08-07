@@ -19,10 +19,11 @@ import $ from 'jquery';
 
 function App(props) {
   const [loading, setLoading] = useState(true);
-  const [isCallIp, setIsCallIp] = useState(false);
+  const [isFirstIn, setIsFirstIn] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(0);
   React.useEffect(() => {
-    if (!isCallIp) {
-      setIsCallIp(true);
+    if (!isFirstIn) {
+      setIsFirstIn(true);
       let ip = '';
       let location = '';
       let time = '';
@@ -40,12 +41,12 @@ function App(props) {
           $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwezhMI0x6Ym5zHRDfeDWrg1zAxMhLcRlXcL8QPwQ/exec",
             data: {
-                "ip": ip,
-                "location": location,
-                "time": time
+              "ip": ip,
+              "location": location,
+              "time": time
             },
-            success: function(response) {
-              if(response == "成功"){
+            success: function (response) {
+              if (response == "成功") {
                 console.log("Success to Record Ip");
               }
             },
@@ -53,7 +54,9 @@ function App(props) {
         },
       });
     }
-  })
+
+  });
+
   function setLoaded(loaded) {
     setLoading(loaded);
   }
