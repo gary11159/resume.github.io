@@ -7,6 +7,11 @@
     font-size: 32px !important;
     font-weight:bold;
 }
+
+.fs24 {
+    font-size: 24px !important;
+    font-weight:bold;
+}
 .black {
     color: black;
 }

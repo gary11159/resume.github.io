@@ -122,7 +122,7 @@ section>div {
 
 @media (min-width: 1024px) {
   .line {
-    transform: rotate(90deg) scale(0.55);
+    transform: rotate(90deg) scale(0.62);
   }
 }
 
@@ -296,6 +296,11 @@ section>div {
   float: left;
 }
 
+.sp {
+  color: #ccc8c8;
+  float: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -305,22 +310,66 @@ section>div {
   }
 }
 
-.gototop{
-	display: block;
-	visibility: hidden;
-	opacity: 0;
+.gototop {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
   transition: 300ms;
   z-index: 9999;
 }
 
 /*go to top*/
+
 .gototop {
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	text-decoration: none;
-	cursor: pointer;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .side-collapse-container-left {
+    position: relative;
+    left: 0;
+    transition: left .4s;
+  }
+  .side-collapse-container-left.out {
+    left: 70%;
+  }
+  .side-collapse-left {
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    position: fixed;
+    overflow: hidden;
+    ransition: width .4s;
+  }
+  .side-collapse-left.in {
+    width: 0;
+  }
+  .side-collapse-container-right {
+    position: relative;
+    right: 0;
+    transition: right .4s;
+  }
+  .side-collapse-container-right.out {
+    right: 70%;
+  }
+  .side-collapse-right {
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    position: fixed;
+    overflow: hidden;
+    transition: width .4s;
+  }
+  .side-collapse-right.in {
+    width: 0;
+  }
 }

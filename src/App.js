@@ -20,7 +20,31 @@ import $ from 'jquery';
 function App(props) {
   const [loading, setLoading] = useState(true);
   const [isFirstIn, setIsFirstIn] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const [device, setDevice] = React.useState("PC");
+  const [_isMounted, set_isMounted] = React.useState(false);
+
+  const handleRWD = () => {
+    !_isMounted ? set_isMounted(true) : set_isMounted(false);
+    if (window.innerWidth > 768) {
+      setDevice("PC");
+    }
+    else if (window.innerWidth > 576) {
+      setDevice("tablet");
+    }
+    else {
+      setDevice("mobile");
+    }
+  }
+  React.useEffect(() => {
+    if (!_isMounted) {
+      handleRWD();
+    }
+    window.addEventListener('resize', handleRWD);
+    return (() => {
+      window.removeEventListener('resize', handleRWD);
+    })
+  }, []);
+
   React.useEffect(() => {
     if (!isFirstIn) {
       setIsFirstIn(true);
@@ -63,12 +87,12 @@ function App(props) {
   return (
     <>
       {loading && <Spinner />}
-      <Header />
+      <Header device={device}/>
       <Info />
       <Skill />
-      <Experience setLoaded={(loaded) => setLoaded(loaded)} />
+      <Experience setLoaded={(loaded) => setLoaded(loaded)} device={device}/>
       <ScrollToTop />
-      <Footer />
+      <Footer device={device}/>
     </>
   );
 }
