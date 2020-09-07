@@ -52,6 +52,23 @@ function App(props) {
       let location = '';
       let time = '';
       let allThing = '';
+      let os = () => {
+        let agent = navigator.userAgent.toLowerCase();
+        let isMac = /macintosh|mac os x/i.test(navigator.userAgent);
+        if (agent.indexOf("win32") >= 0 || agent.indexOf("wow32") >= 0) {
+          return "Windows 32位元"
+        }
+        if (agent.indexOf("win64") >= 0 || agent.indexOf("wow64") >= 0) {
+          return "Windows 64位元"
+        }
+        if (isMac) {
+          return "Mac"
+        }
+      }
+      let resolution = () => {
+        let ratio = window.devicePixelRatio || 1;
+        return (Math.max(window.screen.width, window.screen.height) * ratio) + 'x' + (Math.min(window.screen.width, window.screen.height) * ratio)
+      }
       $.ajax({
         url: "https://www.cloudflare.com/cdn-cgi/trace",
         success: function (response) {
@@ -67,11 +84,13 @@ function App(props) {
             data: {
               "ip": ip,
               "location": location,
-              "time": time
+              "time": time,
+              "os": os,
+              "resolution": resolution
             },
             success: function (response) {
               if (response == "成功") {
-                console.log("Success to Record Ip");
+                console.log("Success");
               }
             },
           });
@@ -87,12 +106,12 @@ function App(props) {
   return (
     <>
       {loading && <Spinner />}
-      <Header device={device}/>
+      <Header device={device} />
       <Info />
       <Skill />
-      <Experience setLoaded={(loaded) => setLoaded(loaded)} device={device}/>
+      <Experience setLoaded={(loaded) => setLoaded(loaded)} device={device} />
       <ScrollToTop />
-      <Footer device={device}/>
+      <Footer device={device} />
     </>
   );
 }
