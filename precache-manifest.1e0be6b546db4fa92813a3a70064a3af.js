@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "964487b431439e3b1a99b11b93fd4b19",
+    "revision": "15bf0480dd42f19a250c064d1fa37e84",
     "url": "/resume.github.io/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/resume.github.io/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "b77c2a77ebfcfa2fee81",
-    "url": "/resume.github.io/static/css/main.ce53bb17.chunk.css"
+    "revision": "024b3f41caab6f3a2a3f",
+    "url": "/resume.github.io/static/css/main.acba1ee2.chunk.css"
   },
   {
     "revision": "b5516da2ca5805086ea0",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/resume.github.io/static/js/2.9f252c2b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b77c2a77ebfcfa2fee81",
-    "url": "/resume.github.io/static/js/main.5d49d255.chunk.js"
+    "revision": "024b3f41caab6f3a2a3f",
+    "url": "/resume.github.io/static/js/main.dd6f1cc1.chunk.js"
   },
   {
     "revision": "41320e076760b1c4d0dd",
