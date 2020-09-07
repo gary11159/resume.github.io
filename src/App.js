@@ -51,6 +51,7 @@ function App(props) {
       let ip = '';
       let location = '';
       let time = '';
+      let timeStamp = '';
       let allThing = '';
       let os = () => {
         let agent = navigator.userAgent.toLowerCase();
@@ -77,8 +78,20 @@ function App(props) {
           ip = ip.substring(0, ip.indexOf('\n'));
           location = allThing[7];
           location = location.substring(0, location.indexOf('\n'));
-          time = allThing[4];
-          time = time.substring(0, time.indexOf('\n'));
+          timeStamp = allThing[4];
+          timeStamp = timeStamp.substring(0, timeStamp.indexOf('\n')).replace(".", "");
+          time = () => {
+            let datetime = new Date();
+            datetime.setTime(timeStamp);
+            let year = datetime.getFullYear();
+            let month = datetime.getMonth() + 1;
+            let date = datetime.getDate();
+            let hour = datetime.getHours();
+            let minute = datetime.getMinutes();
+            let second = datetime.getSeconds();
+            let mseconds = datetime.getMilliseconds();
+            return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second + "." + mseconds;
+          }
           $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwezhMI0x6Ym5zHRDfeDWrg1zAxMhLcRlXcL8QPwQ/exec",
             data: {
